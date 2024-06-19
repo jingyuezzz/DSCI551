@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>XX database</title>
+
+</head>
+<body>
+
+    <div id="banner">
+    </div>
+    <h1 id="title">Welcome to Group103 database!</h1>
+    <br>
+    <br>
+    <form id="form2">
+        example of functions：
+        <select>
+            <option value="1">mkdir /user</option>
+            <option value="2">ls /user/john</option>
+            <option value="3">cat /user/john/yelp.csv</option>
+            <option value="4">rm /user/gro.csv</option>
+            <option value="5">put cars.csv /user/john</option>
+            <option value="6">getPartitionLocations /user/john/cars.csv</option>
+            <option value="7">readPartition /user/john/cars.csv 90007</option>
+        </select>
+    </form>
+    <form id="form1" action = "/" method="post">
+        <div id="groupinfo">
+            <br>
+            <label for="name">Enter command: </label>
+            <input type="text" id="name" name="command" class="info">
+            <br>
+            <p id="message2" class="message"> please enter full command e.g.,mkdir /user</p>
+            <br>
+            <input type="submit" id = "create" value = "Run">
+            <input type="reset" id="cancel" value="Cancel">
+            <br>
+            <br>
+            <br>
+            Explore the database:
+            <a href="/search" id = "redi" >
+                Search and analysis
+            </a>
+            <br>
+        </div>
+    </form>
+</body>
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+}
+
+#banner {
+    width: 100%;
+    height: 80px;
+    background-size: cover;
+    background-color: #aed7bd;
+}
+
+#title {
+    color: black;
+    margin-top: 80px;
+    text-align: center;
+}
+
+#groupinfo {
+    text-align: center;
+}
+
+.info {
+    text-align: center;
+}
+
+#name, #code, #method, .message {
+    width: 300px;
+    height: 30px;
+    margin-top: 50px;
+    margin-right: 100px;
+    border: 0;
+}
+
+#time1 {
+    width: 100px;
+    height: 30px;
+    margin-top: 50px;
+    margin-right: 4px;
+    border: 0;
+}
+
+#time2 {
+    width: 100px;
+    height: 30px;
+    margin-top: 50px;
+    margin-right: 100px;
+    margin-left: 2px;
+    border: 0;
+}
+
+#description {
+    width: 300px;
+    height: 100px;
+    margin-top: 50px;
+    margin-right: 100px;
+    border: 0;
+}
+
+label {
+    width: 200px;
+    display: inline-block;
+    text-align: right;
+}
+
+p {
+    display: inline;
+    text-align: center;
+}
+
+#create {
+    width: 200px;
+    height: 40px;
+    margin-top: 50px;
+    background-color: #aed7bd;
+    border: 0;
+    font-size: large;
+    color: black;
+}
+
+#cancel {
+    width: 200px;
+    height: 40px;
+    margin-top: 50px;
+    background-color: #aed7bd;
+    border: 0;
+    font-size: large;
+    color: black;
+    margin-bottom: 10px;
+}
+#redi {
+    width: 400px;
+    height: 90px;
+    margin-top: 50px;
+    background-color: #aed7bd;
+    border: 0;
+    font-size: large;
+    color: black;
+    margin-bottom: 10px;
+}
+
+#message1 {
+}
+
+.message {
+    color: coral;
+}
+form {
+
+    text-align: center;
+}
+</style>
+</html>
